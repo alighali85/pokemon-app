@@ -1,0 +1,44 @@
+.app-header {
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header__logo-wrapper {
+ display: flex;
+ align-items: center;
+ max-width: 248px;
+}
+
+.app-header__logo-wrapper__logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  margin: 8px;
+}
+
+.app-header__logo-wrapper__logo-title {
+  font-size: 1.5em;
+}
+
+.app-header__search-input {
+  height: 36px;
+  margin: 7px;
+  border: 0;
+  padding: 7px;
+  border-radius: 5px;
+  color: gray;
+  font-size: 24px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media(max-width: 768px) {
+  .app-header {
+    height: auto;
+    flex-direction: column;
+  }
+}

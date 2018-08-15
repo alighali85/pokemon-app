@@ -1,0 +1,11 @@
+.pokemon-app {
+  text-align: center;
+  background: #FFCB05;
+}
+
+.pokemon-app_header {
+  background-color: #FFCB05;
+  height: 96px;
+  padding: 20px;
+  color: white;
+}
