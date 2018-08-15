@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PokemonsList from '../PokemonsList'
 import Api from '../../Api'
 import Pokemon from 'pokemon-images'
-import { Link } from 'react-router-dom'
 import './style.css'
 
 export default class PokemonSpecies extends Component {
@@ -51,7 +50,7 @@ getEvoluationChain = (url) => {
 }
 
 render () {
-  const { evoluationChainUrl, pokemonName, pokemonId, evoluationChain } = this.state
+  const { evoluationChainUrl, pokemonName, evoluationChain } = this.state
   const  pokemonImage = !!pokemonName && Pokemon.getSprite(pokemonName)
   return (
     pokemonImage ? <div>

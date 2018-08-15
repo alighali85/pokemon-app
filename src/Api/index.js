@@ -1,4 +1,4 @@
-import { ALL_POKEMON, EVALUATION_CHAIN, POKEMON_SPECIES } from './endPoints'
+import { ALL_POKEMON, POKEMON_SPECIES } from './EndPoints'
 
 export default class Api {
   static allPokemons () {

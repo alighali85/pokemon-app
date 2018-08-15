@@ -3,7 +3,6 @@ import './style.css'
 import { Link } from 'react-router-dom'
 
 export default ({list, title = ''}) => {
-  console.log(list)
   return (
     <div> 
       {list

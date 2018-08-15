@@ -4,14 +4,10 @@ import pokemonBall from '../assets/images/pokemon-ball.png'
 import pokemonLabel from '../assets/images/pokemon-label.svg'
 
 export default class Intro extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   closeIntro = () => {
     setTimeout(() => {
       this.props.onClose()
-    }, 600)
+    }, 750)
   }
   
   render () {

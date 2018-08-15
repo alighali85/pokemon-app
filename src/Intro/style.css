@@ -95,22 +95,22 @@ input[type=checkbox]:checked + .pokemon-app-intro__images-wrapper label {
 }
 
 input[type=checkbox]:checked ~ .pokemon-app-intro__left-slide {
-  animation: move-left 2s;
+  animation: move-left 1.5s;
 }
 
 input[type=checkbox]:checked ~ .pokemon-app-intro__right-slide {
-  animation: move-right 2s;
+  animation: move-right 1.5s;
 }
 
 @keyframes move-right {
   0% {
     margin-right: 0px;
   }
-  10% {
+  25% {
     margin-right: 0;
   }
-  75% {
-    margin-right: -100vw;
+  60% {
+    margin-right: -50vw;
   }
   100% {
     margin-right: -100vw;
@@ -121,11 +121,11 @@ input[type=checkbox]:checked ~ .pokemon-app-intro__right-slide {
   0% {
     margin-left: 0px;
   }
-  10% {
+  25% {
     margin-left: 0;
   }
-  75% {
-    margin-left: -100vw;
+  60% {
+    margin-left: -50vw;
   }
   100% {
     margin-left: -100vw;

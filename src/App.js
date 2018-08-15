@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Router, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 import PokemonsList from './Components/PokemonsList'
@@ -33,7 +33,6 @@ class App extends Component {
 
   filterResult = (e) => {
     const { value } = e.target
-    console.log('filter', value)
     const searchResult = this.state.allPokemons.filter(item => item.name.indexOf(value) > -1)
     this.setState({
       searchResult: searchResult,
