@@ -53,8 +53,8 @@ class App extends Component {
       <div className='pokemon-app'>
         <Intro onClose={this.closeIntro} show={this.state.showIntro}/>
         <AppHeader logo={logo} headline='pokemon' onSearch={this.filterResult}/>
-        <Route path='/' render={(props)=> <PokemonsList {...props} list={pokemonList}/>} exact/>
-        <Route path='/pokemon-species/:id' component={PokemonSpecies} exact />
+        <Route path={process.env.PUBLIC_URL + '/'} render={(props)=> <PokemonsList {...props} list={pokemonList}/>} exact/>
+        <Route path={process.env.PUBLIC_URL + '/pokemon-species/:id'} component={PokemonSpecies} exact />
       </div>
     )
   }

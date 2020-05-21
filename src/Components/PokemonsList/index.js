@@ -6,7 +6,7 @@ export default ({list, title = ''}) => {
   return (
     <div> 
       {list
-        .map((pokemon, i) => <Link key={i} to={pokemon.url.slice(25)}>
+        .map((pokemon, i) => <Link key={i} to={process.env.PUBLIC_URL + pokemon.url.slice(25)}>
           <div className='pokemon-list'>
           <img className='pokemon-list_image'
             key={pokemon.name} 
