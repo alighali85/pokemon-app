@@ -1,5 +1,6 @@
 {
   "name": "pokemon-app",
+  "homepage": "http://alighali85.github.io/pokemon-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,8 +12,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
